@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Paraíso</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Slick CSS -->
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+
+</head>
+<body>
+
+<header>
+    <img src="img/logo.png" alt="Logo del Hotel Paraíso" class="logo">
+    <h1>Hotel Paraíso</h1>
+    <nav>
+        <ul>
+            <li><a href="#bienvenida">Inicio</a></li>
+            <li><a href="#habitaciones">Habitaciones</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#recepcion">Recepción</a></li>
+            <li><a href="#ubicacion">Ubicación</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#reserva">Reserva</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="bienvenida">
+    <h2>Bienvenido a Hotel Paraíso</h2>
+    <p>Disfruta de una experiencia única de confort y relajación.</p>
+    <img src="img/exterior.jpg" alt="Vista exterior del hotel" class="imagen-principal imagen-exterior">
+
+</section>
+<div class="galeria-imagenes">
+    <div><img src="img/image1.jpg" alt="Imagen 1"></div>
+    <div><img src="img/image2.jpg" alt="Imagen 2"></div>
+    <div><img src="img/image3.jpg" alt="Imagen 3"></div>
+    <div><img src="img/image4.jpg" alt="Imagen 4"></div>
+</div>
+
+<div class="testimonios">
+    <blockquote>"El mejor servicio, la mejor vista. Volveré pronto." - Juan Pérez</blockquote>
+    <blockquote>"Increíble experiencia, todo fue perfecto." - Ana López</blockquote>
+</div>
+
+<section id="habitaciones">
+    <h2>Habitaciones</h2>
+    <p>Descubre nuestras cómodas y elegantes habitaciones.</p>
+    <img src="img/habitacion.jpg" alt="Habitación de lujo" class="imagen-seccion">
+</section>
+
+<section id="servicios">
+    <h2>Servicios</h2>
+    <p>Ofrecemos spa, piscina, restaurante gourmet y mucho más.</p>
+    <img src="img/piscina.jpg" alt="Piscina del hotel" class="imagen-seccion">
+</section>
+
+<section id="recepcion">
+    <h2>Recepción</h2>
+    <p>Te damos la bienvenida con un servicio excepcional.</p>
+    <img src="img/recepcion.jpg" alt="Recepción del hotel" class="imagen-seccion">
+</section>
+
+<!-- Sección de Ubicación -->
+<section id="ubicacion">
+    <h2>Ubicación</h2>
+    <p>Estamos ubicados en el corazón de la ciudad, a pocos minutos de las principales atracciones turísticas.</p>
+    <div class="mapa">
+        <!-- Aquí puedes agregar un mapa de Google Maps -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.1576783523587!2d-87.04019468465988!3d21.17429958381758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4c94288f26b27d%3A0x83fdf35196e9e431!2sCancún%2C%20Quintana%20Roo%2C%20México!5e0!3m2!1ses!2ses!4v1695386362510!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+</section>
+
+<!-- Sección de Contacto y Redes Sociales -->
+<section id="contacto">
+    <h2>Información de Contacto</h2>
+    <p>Estamos aquí para ayudarte. Si tienes alguna consulta, no dudes en ponerte en contacto con nosotros.</p>
+    
+    <!-- Datos de contacto -->
+    <div class="contacto-detalles">
+        <p><strong>Teléfono:</strong> +52 1 123 456 7890</p>
+        <p><strong>Correo Electrónico:</strong> contacto@tuhotel.com</p>
+        <p><strong>Dirección:</strong> Avenida Siempre Viva 123, Cancún, Quintana Roo, México</p>
+    </div>
+    
+    <!-- Enlaces a redes sociales -->
+    <h3>Síguenos en Redes Sociales</h3>
+    <div class="redes-sociales">
+        <a href="https://www.facebook.com/onehoteles/?locale=es_LA" target="_blank">
+            <img src="img/facebook-icon.png" alt="Facebook">
+        </a>
+        <a href="https://twitter.com/onehoteles" target="_blank">
+            <img src="img/twitter-icon.png" alt="Twitter">
+        </a>
+        <a href="https://www.instagram.com/hotelesone/" target="_blank">
+            <img src="img/instagram-icon.png" alt="Instagram">
+        </a>
+    </div>
+</section>
+
+<!-- Sección de Reserva de Habitaciones -->
+<section id="reserva">
+    <h2>Reserva Tu Habitación</h2>
+    <p>Reserva tu estancia con nosotros y disfruta de un servicio excepcional y las mejores vistas.</p>
+
+    <form id="form-reserva">
+        <label for="habitacion">Tipo de Habitación:</label>
+        <select id="habitacion" name="habitacion" required>
+            <option value="individual">Individual</option>
+            <option value="doble">Doble</option>
+            <option value="suite">Suite</option>
+        </select>
+
+        <label for="fecha_checkin">Fecha de Entrada:</label>
+        <input type="date" id="fecha_checkin" name="fecha_checkin" required>
+
+        <label for="fecha_checkout">Fecha de Salida:</label>
+        <input type="date" id="fecha_checkout" name="fecha_checkout" required>
+
+        <label for="nombre_reserva">Nombre Completo:</label>
+        <input type="text" id="nombre_reserva" name="nombre_reserva" required>
+
+        <label for="email_reserva">Correo Electrónico:</label>
+        <input type="email" id="email_reserva" name="email_reserva" required>
+
+        <label for="telefono_reserva">Teléfono de Contacto:</label>
+        <input type="tel" id="telefono_reserva" name="telefono_reserva" required>
+
+        <button type="submit">Confirmar Reserva</button>
+    </form>
+
+    <div id="mensaje-confirmacion" style="display:none;">
+        <h3>Gracias por tu Reserva</h3>
+        <p>Tu reserva ha sido confirmada. Te hemos enviado un correo de confirmación.</p>
+    </div>
+</section>
+
+<!-- jQuery (necesario para Slick) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- Slick JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+
+<script src="script.js"></script>  <!-- Enlace al archivo JavaScript externo -->
+</body>
+</html>
+
+
+
+</body>
+</html>
